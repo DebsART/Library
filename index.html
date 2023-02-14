@@ -10,27 +10,33 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1> Online Library</h1>
+            <h1> Library</h1>
             <button id="formButton"> Add New Book</button>
         </div>  
-        <div class="library"></div> 
-        <div class="formPopup">
-            <legend> Book Details </legend>
 
-            <div class="title"> <label for="title"> Title</label> 
-            <input type="text" id="title" name="title"> </div>
+         <div class="popUp" >
+            <form>
+                <legend> Book Details </legend>
 
-            <div class="author"> <label for="author"> Author</label> 
-            <input type="text" id="author" name="author"> </div>
+                <div class="title"> <label for="title"> Title</label> 
+                <input type="text" id="title" name="title"> </div>
 
-            <div class="pages"> <label for="pages"> Number of pages</label> 
-            <input type="text" id="pages" name="pages"> </div>
+                <div class="author"> <label for="author"> Author</label> 
+                <input type="text" id="author" name="author"> </div>
 
-            <div class="hasRead"> <label for="hasRead"> Have you read this book ?</label> 
-            <input type="checkbox" id="hasRead" name="hasRead"> </div>
+                <div class="pages"> <label for="pages"> Number of pages</label> 
+                <input type="text" id="pages" name="pages"> </div>
 
-            <button type="submit"> Add </button>
+                <div class="hasRead"> <label for="hasRead"> Have you read this book ?</label> 
+                <input type="checkbox" id="hasRead" name="hasRead"> <p> Yes </p>
+                <input type="checkbox" id="hasRead" name="notRead"> <p> No </p></div>
+
+                <button type="submit"> Add </button>
+            </form>
         </div> 
+        
+        <div class="library"></div> 
+       
     </div>
 </body>
 <script src="java.js"></script>
