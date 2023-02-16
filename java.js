@@ -29,8 +29,15 @@ let hasRead = document.querySelector("#hasRead");
         this.hasRead = hasRead.value;
     });
 
-
+let janeEyre = document.querySelector('#janeEyre');
+let dracula = document.querySelector('#dracula');
+let jekyllHyde = document.querySelector('#jekyllHyde');
 let myLibrary = [];
+
+myLibrary.push('janeEyre');
+myLibrary.push('dracula');
+myLibrary.push('jekyllHyde');
+console.log(myLibrary);
 
 function book (title, author, pages, hasRead) {
     this.title = title;
