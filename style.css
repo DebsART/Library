@@ -92,6 +92,7 @@ input {
     background-color: 
     #0f172a;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 60px;
 }
 
 
@@ -127,4 +128,18 @@ padding-top: 20px;
 
 [type="checkbox"] {
     height: 15px;
+}
+
+#rButton {
+    background-color: green;
+    font-family: monospace;
+    color: white;
+    height: 22px;
+    margin-bottom: 0px;
+}
+#dButton {
+    background-color: blue;
+    font-family: monospace;
+    color: white;
+    height: 22px;
 }

@@ -19,17 +19,21 @@
                 <legend> Book Details </legend>
 
                 <div class="title"> <label for="title"> Title</label> 
-                    &nbsp; <input type="text" id="title" name="title"> </div>
+                    &nbsp; <input type="text" id="title" name="title" required="required"/> </div>
 
                 <div class="author"> <label for="author"> Author</label> 
-                    &nbsp;<input type="text" id="author" name="author"> </div>
+                    &nbsp;<input type="text" id="author" name="author" required="required"/> </div>
 
                 <div class="pages"> <label for="pages"> Number of pages</label> 
-                    &nbsp; <input type="text" id="pages" name="pages"> </div>
+                    &nbsp; <input type="number" id="pages" name="pages" required="required"/> </div>
 
-                <div class="hasRead"> <label for="hasRead"> Have you read this book ?</label> 
-                <p> Yes<input type="radio" id="hasRead" name="hasRead">  
-                    &nbsp; No  <input type="radio" id="hasRead" name="hasRead"> </p></div>
+                <div class="hasRead">
+                <legend> Have you read this book?</legend> 
+                <label for="yes" onclick=""> Yes </label> 
+                <input type="radio" id="yes" value="yes" name="hasRead" >  
+                   
+                <label for="no" onclick=""> No </label>         
+                <input type="radio" id="no" value="no" name="hasRead"> </div>
 
                 <button id="submit" type="submit"> Add </button>
             </form>
@@ -40,21 +44,24 @@
                 <h3> Jane Eyre</h3>
                 <h3> Charlotte Brontë </h3>
                 <h3> 410 pages</h4>
-                <h3>Read <input type="checkbox" id="hasRead" name="hasRead" checked ></h3> 
+                <button id="rButton" >Read</button>
+                <button id="dButton"> Delete </button>
             </div>
 
             <div class="bookCard" id="dracula">
                 <h3> Dracula</h3>
                 <h3> Bram Stoker </h3>
                 <h3> 418 pages</h4>
-                <h3>Read <input type="checkbox" id="hasRead" name="hasRead" checked ></h3> 
+                <button id="rButton">Read</button>
+                <button id="dButton"> Delete </button>
             </div>
 
             <div class="bookCard" id="jekyllHyde">
                 <h3> Strange Case of Dr Jekyll and Mr Hyde</h3>
                 <h3> Robert Louis Stevenson </h3>
                 <h3> 141 pages</h4>
-                <h3>Read <input type="checkbox" id="hasRead" name="hasRead" checked ></h3> 
+                <button id="rButton">Read</button>
+                <button id="dButton"> Delete </button> 
             </div>
         </div> 
        
